@@ -15,6 +15,8 @@
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
 require_once __DIR__ . '/../../../../core/php/core.inc.php';
+$error = '';
+$mfa = false;
 
 if (init('response_type') == 'code') {
 	include_file('core', 'authentification', 'php');
@@ -23,19 +25,19 @@ if (init('response_type') == 'code') {
 		// If login and password supplied, try to login the user
 		if (init('username', '') != '' || init('password', '') != '') {
 			$user = user::connect(init('username'), init('password'));
-			if (is_object($user)
-					&& network::getUserLocation() != 'internal'
-					&& $user->getOptions('twoFactorAuthentification', 0) == 1
-					&& $user->getOptions('twoFactorAuthentificationSecret') != ''
-					&& init('twoFactorCode') == '') {
+			if (
+				is_object($user)
+				&& network::getUserLocation() != 'internal'
+				&& $user->getOptions('twoFactorAuthentification', 0) == 1
+				&& $user->getOptions('twoFactorAuthentificationSecret') != ''
+				&& init('twoFactorCode') == ''
+			) {
 				$error = __("Merci de fournir un Token 2FA", __FILE__);
 				$mfa = true;
 
 			} elseif (!login(init('username'), init('password'), init('twoFactorCode'))) {
 				$error = __("Mot de passe ou nom d'utilisateur incorrect", __FILE__);
 			}
-		} else {
-			$error = '';
 		}
 	}
 
@@ -61,7 +63,7 @@ if (init('response_type') == 'code') {
 			<center>
 				<img src='/core/img/logo-jeedom-petit-nom-couleur-128x128.png' /><br/><br/>
 				<?php
-				if ($error != ''){
+				if ($error != '') {
 					echo '<div class="alert alert-danger" role="alert" style="margin:10px">' . $error . '</div>';
 				}
 				?>
@@ -79,16 +81,16 @@ if (init('response_type') == 'code') {
 					</div></div>
 					<?php 
 					}
-					foreach(array('response_type', 'client_id', 'redirect_uri', 'state') as $param) {
+					foreach (array('response_type', 'client_id', 'redirect_uri', 'state') as $param) {
 						$value = init($param);
-						if($value != '')
-							echo '			<input type="hidden" name="'. htmlspecialchars($param) .'" value="'. htmlspecialchars($value) .'" />';
+						if ($value != '') {
+							echo '<input type="hidden" name="' . htmlspecialchars($param) . '" value="' . htmlspecialchars($value) . '" />';
+						}
 					}
 					?>
 					<button type="submit" class="btn btn-primary mb-2">{{Valider}}</button>
 				</form>
 			</center>
-			<pre><?php print_r($_REQUEST); ?></pre>
 		</body>
 		</html>
 		<?php
@@ -99,7 +101,10 @@ if (init('response_type') == 'code') {
 		config::save('OAuthAuthorizationCode', $authorization_code, 'gsh');
 		header('Location: ' . init('redirect_uri') . '?code=' . $authorization_code . '&state=' . init('state'));
 	}
-} else if ($_POST['client_id'] == config::byKey('gshs::clientId', 'gsh') && $_POST['client_secret'] == config::byKey('gshs::clientSecret', 'gsh')) {
+} elseif (
+	$_POST['client_id'] == config::byKey('gshs::clientId', 'gsh') 
+	&& $_POST['client_secret'] == config::byKey('gshs::clientSecret', 'gsh')
+) {
 	if (!in_array(init('type', 'sh'), array('df', 'sh'))) {
 		echo 'Le type ne peut etre que sh ou df';
 		die();
@@ -108,7 +113,11 @@ if (init('response_type') == 'code') {
 	header('HTTP/1.1 200 OK');
 	header('\'Access-Control-Allow-Origin\': *');
 	header('\'Access-Control-Allow-Headers\': \'Content-Type, Authorization\'');
-	if ($_POST['grant_type'] == 'authorization_code' && $_POST['code'] == config::byKey('OAuthAuthorizationCode', 'gsh') && config::byKey('OAuthAuthorizationCode', 'gsh') != '') {
+	if (
+		$_POST['grant_type'] == 'authorization_code' 
+		&& $_POST['code'] == config::byKey('OAuthAuthorizationCode', 'gsh') 
+		&& config::byKey('OAuthAuthorizationCode', 'gsh') != ''
+	) {
 		config::save('OAuthAuthorizationCode', '', 'gsh');
 		$access_token = config::genKey();
 		config::save('OAuthAccessToken' . init('type', 'sh'), $access_token, 'gsh');
@@ -121,7 +130,11 @@ if (init('response_type') == 'code') {
 			'expires_in' => 3600 * 24,
 		);
 		echo json_encode($response);
-	} elseif ($_POST['grant_type'] == 'refresh_token' && $_POST['refresh_token'] == config::byKey('OAuthRefreshToken' . init('type', 'sh'), 'gsh') && config::byKey('OAuthRefreshToken' . init('type', 'sh'), 'gsh') != '') {
+	} elseif (
+		$_POST['grant_type'] == 'refresh_token' 
+		&& $_POST['refresh_token'] == config::byKey('OAuthRefreshToken' . init('type', 'sh'), 'gsh') 
+		&& config::byKey('OAuthRefreshToken' . init('type', 'sh'), 'gsh') != ''
+	) {
 		$access_token = config::genKey();
 		config::save('OAuthAccessToken' . init('type', 'sh'), $access_token, 'gsh');
 		$response = array(
