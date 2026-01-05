@@ -47,7 +47,7 @@ if (init('response_type') == 'code') {
 	}
 
 	// If something failed prompt a login page
-	if (isset($error)) {
+	if (!isset($error)) {
 		?>
 		<html>
 		<head>
