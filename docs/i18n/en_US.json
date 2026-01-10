@@ -332,6 +332,8 @@
         "Le changement de vitesse sur un ventilateur ne marche pas": "Changing the speed on a fan does not work",
         "Après analyse Google n'envoie pas d'ordre lors d'une action sur la vitesse": "After analysis Google does not send an order during an action on speed",
         "Il faut donc attendre que Google corrige": "We must therefore wait for Google to correct",
+        "J'ai une erreur 404 lors l'association avec google home": "",
+        "C'est un bug dans l'application Gooogle home pour corriger vous pouvez essayer de vider le cache de l'application google home ou lors de la connexion vous pouvez essayer en lui demandant d'ouvrir la page de connexion dans le navigateur au lieu de l'application google home": "",
         " Standalone.": " Standalone.",
         " Standalone?": " Standalone?",
         "Standalone ": "Standalone ",
