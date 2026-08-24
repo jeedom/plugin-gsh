@@ -1,322 +1,319 @@
 {
-    "plugins\/gsh\/plugin_info\/configuration.php": {
-        "Attention votre connexion externe ne semble pas etre en https, ce plugin nécessite ABSOLUMENT une connexion https. Si vous ne savez pas comment faire vous pouvez souscrire à un service pack power pour utiliser le service de DNS Jeedom": "Bitte beachten Sie, dass Ihre externe Verbindung nicht in https zu sein scheint. Dieses Plugin erfordert ABSOLUT eine https-Verbindung. Wenn Sie nicht wissen, wie, können Sie ein Netzteil abonnieren, um den Jeedom-DNS-Dienst zu nutzen",
-        "Serveur Google smarthome": "Google Smarthome Server",
-        "Mode": "Modus",
-        "Cloud": "Wolke",
-        "Standalone": "Standalone",
-        "Abonnement aux services assistants vocaux": "Abonnement für Sprachassistentendienste",
-        "Votre abonnement aux services assistants vocaux finit le ": "Ihr Abonnement für Sprachassistentendienste endet am",
-        "Pour le prolonger, allez": "Um es zu erweitern, gehen Sie",
-        "ici": "hier",
-        "Votre abonnement aux services assistants vocaux est illimité.": "Ihr Abonnement für Sprachassistentendienste ist unbegrenzt",
-        "Votre abonnement aux services assistants vocaux est finit.": "Ihr Abonnement für Sprachassistentendienste ist beendet",
-        "Pour vous réabonner, allez": "Um sich erneut anzumelden, gehen Sie",
-        "Envoyer configuration au market": "Konfiguration an den Markt senden",
-        "Envoyer": "Senden",
-        "Activer l'éxecution local": "Aktivieren Sie die lokale Ausführung",
-        "Activer la rotation de la clef api": "Aktivieren Sie die Drehung der API-Taste",
-        "Interdire toute requête si": "Verbieten Sie jede Anfrage, wenn",
-        "Oauth": "Oauth",
-        "Cient ID": "Kundennummer",
-        "Cient Secret": "Cient Secret",
-        "Smarthome": "Intelligentes Zuhause",
-        "Fulfillment URL : ": "Erfüllungs-URL:",
-        "Authorization URL : ": "Autorisierungs-URL:",
-        "Token URL : ": "Token-URL:",
-        "ID du projet Smarthome": "Smarthome-Projekt-ID",
-        "Homegraph API Google": "Google API Homegraph",
-        "Homegraph User Agent": "Homegraph User Agent",
-        "Mail client (JWT)": "Kundenpost (JWT)",
-        "Clef privé (JWT)": "Privater Schlüssel (JWT)",
-        "Configuration envoyée avec succès": "Konfiguration erfolgreich gesendet"
-    },
-    "plugins\/gsh\/desktop\/modal\/advanceConfig.php": {
-        "Eqlogic ID non valide : ": "Ungültige Eqlogic ID:",
-        "Device non trouvé": "Gerät nicht gefunden",
-        "Aucun type configuré pour ce périphérique": "Kein Typ für dieses Gerät konfiguriert",
-        "Sauvegarder": "Speichern",
-        "Général": "Allgemein",
-        "Groupe objet (option nécéssitant un compte market spécifique)": "Objektgruppe (Option, die ein bestimmtes Marktkonto erfordert)",
-        "Pousser l'état": "Schieben Sie den Zustand",
-        "Attention cela ne change absolument pas le fonctionnement du plugin": "Bitte beachten Sie, dass dies die Funktionsweise des Plugins nicht verändert",
-        "pousse l'information de l'état des modules au lieu d'attendre la demande de Google) par contre ca peut ralentir votre": "Pusht Modulstatusinformationen, anstatt auf die Anfrage von Google zu warten. Dies kann jedoch Ihre Daten verlangsamen",
-        "Commandes": "Befehle",
-        "Nom": "Name",
-        "Type": "Typ",
-        "Sous-type": "Untertyp",
-        "Type générique": "Typ Gattung",
-        "Action": "Aktion",
-        "Configuration": "Konfiguration",
-        "Sauvegarde réussi, pensez à relancer une synchronisation": "Sicherung erfolgreich, denken Sie daran, die Synchronisierung neu zu starten",
-        "Configuration de la commande": "Befehl Konfiguration"
-    },
-    "plugins\/gsh\/desktop\/modal\/showNeedGenericType.php": {
-        "Eqlogic ID non valide : ": "Ungültige Eqlogic ID:",
-        "Device non trouvé": "Gerät nicht gefunden",
-        "Aucun type configuré pour ce périphérique": "Kein Typ für dieses Gerät konfiguriert",
-        "Voici les types génériques utilisés pour le genre d\\'équipement choisi. Attention il ne faut pas forcément les avoir tous sur l\\'équipement (ou n’en avoir aucun)": "Hier sind die generischen Typen aufgeführt, die für den ausgewählten Gerätetyp verwendet werden. Bitte beachten Sie, dass Sie nicht unbedingt alle auf dem Gerät haben müssen (oder keine)"
-    },
-    "plugins\/gsh\/desktop\/php\/gsh.php": {
-        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
-        "Voir la configuration": "Konfiguration anzeigen",
-        "Sauvegarder": "Speichern",
-        "Equipement": "Gerät",
-        "Scénario": "Szenario",
-        "Plugin": "Plugin",
-        "Options": "Optionen",
-        "Status": "STATUS",
-        "Type": "Typ",
-        "Pseudo": "Spitzname",
-        "Action": "Aktion",
-        "Transmettre": "Senden",
-        "Aucune": "Keine",
-        "Validation": "Validierung",
-        "Code": "Code",
-        "Code pin": "PIN-Code",
-        "Aucun": "Ohne",
-        " . $value['name'] . ": "$ value ['name']",
-        "Ajouter scène": "Szene hinzufügen"
-    },
-    "plugins\/gsh\/desktop\/js\/gsh.js": {
-        "Configuration de l'équipement": "Gerätekonfiguration",
-        "Configuration avancée": "Erweiterte Konfiguration",
-        "Information type générique": "Allgemeine Typinformationen",
-        "Synchronisation réussie. Pour voir le status des équipements à jour, merci de rafraîchir la page (F5)": "Synchronisation erfolgreich. Aktualisieren Sie die Seite (F5), um den aktuellen Status des Geräts anzuzeigen",
-        "Configuration péripheriques": "Peripheriekonfiguration",
-        "Nom de la scène ?": "Name der Szene?",
-        "Nouveau nom ?": "Neuer Name",
-        "Action d\\'entrée": "Eingabeaktion",
-        "Action de sortie": "Aktion beenden",
-        "Décocher pour désactiver l\\'action": "Auswählen, um die Aktion zu deaktivieren",
-        "Cocher pour que la commande s\\'éxecute en parrallèle des autres actions": "Überprüfen Sie, ob der Befehl parallel zu den anderen Aktionen ausgeführt wird",
-        "Sélectionner un mot-clé": "Schlüsselwort auswählen",
-        "Supprimer": "Löschen",
-        "Nom de la scène": "Name der Szene",
-        "Pièce": "Zimmer",
-        "Pseudo": "Spitzname"
-    },
-    "plugins\/gsh\/core\/php\/jeeGsh.php": {
-        "Vous n\\'etes pas autorisé à effectuer cette action. Clef API invalide. Merci de corriger la clef API sur votre page profil du market et d\\'attendre 24h avant de réessayer.": "Sie sind nicht berechtigt, diese Aktion durchzuführen. Ungültiger API-Schlüssel. Bitte korrigieren Sie den API-Schlüssel auf Ihrer Marktprofilseite und warten Sie 24 Stunden, bevor Sie es erneut versuchen",
-        "Configuration OK": "Konfiguration OK"
-    },
-    "plugins\/gsh\/core\/php\/jeeGshOauth.php": {
-        "Merci de fournir un Token 2FA": "Bitte geben Sie einen 2FA-Token an",
-        "Mot de passe ou nom d'utilisateur incorrect": "Passwort oder ungültiger Benutzername",
-        "Merci de vous connecter avec un compte Admin": "Bitte melden Sie sich mit einem Admin-Konto an",
-        "Merci de vous connecter à votre Jeedom pour configurer la connexion avec Google": "Bitte verbinden Sie sich mit Ihrem Jeedom, um die Verbindung mit Google zu konfigurieren",
-        "Nom d'utilisateur": "Nutzername",
-        "Mot de passe": "Passwort",
-        "Authentification à 2 facteurs": "2-Faktor-Authentifizierung",
-        "Valider": "Bestätigen"
-    },
     "plugins\/gsh\/core\/ajax\/gsh.ajax.php": {
         "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
-        "Device non trouvé : ": "Gerät nicht gefunden:",
-        "Aucune méthode correspondante à : ": "Keine Methode entsprechend:"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Modes.class.php": {
-        "Mode": "Modus",
-        "Etat mode": "Modusstatus",
-        "Nom du mode": "Modusname",
-        "Nom du mode pour la commande": "Modusname für den Befehl"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Brightness.class.php": {
-        "Luminosité": "Helligkeit",
-        "Etat Luminosité": "Helligkeitszustand"
-    },
-    "plugins\/gsh\/core\/class\/gsh_ArmDisarm.class.php": {
-        "On": "Ein",
-        "Off": "Aus",
-        "Etat": "Zustand"
+        "Aucune méthode correspondante à : ": "Keine Methode entsprechend:",
+        "Device non trouvé : ": "Gerät nicht gefunden:"
     },
     "plugins\/gsh\/core\/class\/gsh.class.php": {
-        "Climatiseur": "Klimaanlage",
-        "Refroidisseur d'air": "Klimaanlage",
-        "Désodorisant": "Deodorant",
-        "Purificateur d\\'air": "Luftreiniger",
+        "Adoucisseur d'eau": "Wasserenthärter",
+        "Alarme": "Alarm",
         "Ampli AV": "AV-Verstärker",
-        "Banne": "Markise",
+        "Arrosage": "Bewässerung",
+        "Aspirateur": "Vakuum",
         "Baignoire": "Badewanne",
-        "Mixeur": "Mixer",
-        "Store": "Speichern",
-        "Chaudière": "Kessel",
+        "Balai": "Besen",
+        "Banne": "Markise",
+        "Barre de son": "Soundbar",
+        "Bouilloire": "Kessel",
         "Caméra": "Kamera",
-        "Detecteur de CO": "CO-Detektor",
-        "Placard": "Schrank",
-        "Machine à café": "Kaffeemaschine",
+        "Capteur": "Sensor",
+        "Chaudière": "Kessel",
+        "Chauffe-eau": "Wasserkocher",
+        "Cheminée": "Schornstein",
+        "Climatiseur": "Klimaanlage",
+        "Congélateur": "Gefrierschrank",
+        "Cuiseur vapeur": "Dampfgarer",
         "Cuisine": "Gekocht",
-        "Rideaux": "Vorhänge",
+        "Detecteur de CO": "CO-Detektor",
+        "Distributeur de nourriture pour animaux": "Tiernahrungsspender",
+        "Douche": "Dusche",
+        "Décodeur": "Decoder",
         "Déshumidificateur": "Luftentfeuchter",
         "Déshydrateur": "Dehydrator",
-        "Lave-vaiselle": "Geschirrspülmaschine",
-        "Porte": "Tür",
-        "Tiroir": "Schublade",
-        "Séche linge": "Wäschetrockner",
-        "Ventilateur": "Lüfter",
-        "Cheminée": "Schornstein",
-        "Congélateur": "Gefrierschrank",
+        "Désodorisant": "Deodorant",
+        "Détecteur de fumée": "Rauchmelder",
+        "Erreur sur la demande de remonté d\\'état :": "Fehler bei der Statusanforderung:",
+        "Erreur sur la demande de synchronisation :": "Fehler bei Synchronisationsanforderung:",
+        "Fenêtre": "Fenster",
+        "Frigo": "Kühlschrank",
         "Friteuse": "Fritteuse",
-        "Porte Garage": "Garagentor",
-        "Portail": "Portal",
+        "Google Smarthome": "Google-Smarthome",
         "Grill": "Grill",
-        "Chauffe-eau": "Wasserkocher",
         "Hotte": "Kapuze",
         "Humidificateur": "Luftbefeuchter",
-        "Bouilloire": "Kessel",
-        "Lumière": "Licht",
-        "Verrou": "Sperren",
-        "Micro-onde": "Mikrowelle",
-        "Balai": "Besen",
-        "Tondeuse": "Mäher",
-        "Multi-cuiseur": "Multi-Herd",
-        "Réseaux": "Netzwerke",
-        "Prise": "Steckdose",
-        "Pergola": "Pergola",
-        "Distributeur de nourriture pour animaux": "Tiernahrungsspender",
-        "Cuiseur vapeur": "Dampfgarer",
-        "Radiateur": "Kühler",
-        "Frigo": "Kühlschrank",
-        "Télécommande": "Fernbedienung",
-        "Routeur": "Router",
-        "Scène": "Szene",
-        "Alarme": "Alarm",
-        "Capteur": "Sensor",
-        "Décodeur": "Decoder",
-        "Douche": "Dusche",
-        "Volet": "Klappe",
-        "Détecteur de fumée": "Rauchmelder",
-        "Barre de son": "Soundbar",
-        "Sous vide": "Unter Vakuum",
-        "Arrosage": "Bewässerung",
-        "Mélangeur sur socle": "Standmixer",
         "Interrupteur": "Wechseln",
-        "Thermostat": "Thermostat",
-        "TV": "Fernseher",
-        "Aspirateur": "Vakuum",
-        "Vanne": "Ventil",
-        "Machine à laver": "Waschmaschine",
-        "Purificateur d'eau": "Wasserreiniger",
-        "Adoucisseur d'eau": "Wasserenthärter",
-        "Fenêtre": "Fenster",
-        "Yaourtière": "Joghurthersteller",
-        "Veuillez vérifier la configuration": "Bitte überprüfen Sie die Konfiguration",
-        "Erreur sur la demande de synchronisation :": "Fehler bei Synchronisationsanforderung:",
-        "Erreur sur la demande de remonté d\\'état :": "Fehler bei der Statusanforderung:",
         "JWT aucun token : ": "JWT kein Token:",
-        "Google Smarthome": "Google-Smarthome"
+        "Lave-vaiselle": "Geschirrspülmaschine",
+        "Lumière": "Licht",
+        "Machine à café": "Kaffeemaschine",
+        "Machine à laver": "Waschmaschine",
+        "Micro-onde": "Mikrowelle",
+        "Mixeur": "Mixer",
+        "Multi-cuiseur": "Multi-Herd",
+        "Mélangeur sur socle": "Standmixer",
+        "Pergola": "Pergola",
+        "Placard": "Schrank",
+        "Portail": "Portal",
+        "Porte": "Tür",
+        "Porte Garage": "Garagentor",
+        "Prise": "Steckdose",
+        "Purificateur d'eau": "Wasserreiniger",
+        "Purificateur d\\'air": "Luftreiniger",
+        "Radiateur": "Kühler",
+        "Refroidisseur d'air": "Klimaanlage",
+        "Rideaux": "Vorhänge",
+        "Routeur": "Router",
+        "Réseaux": "Netzwerke",
+        "Scène": "Szene",
+        "Sous vide": "Unter Vakuum",
+        "Store": "Speichern",
+        "Séche linge": "Wäschetrockner",
+        "TV": "Fernseher",
+        "Thermostat": "Thermostat",
+        "Tiroir": "Schublade",
+        "Tondeuse": "Mäher",
+        "Télécommande": "Fernbedienung",
+        "Vanne": "Ventil",
+        "Ventilateur": "Lüfter",
+        "Verrou": "Sperren",
+        "Veuillez vérifier la configuration": "Bitte überprüfen Sie die Konfiguration",
+        "Volet": "Klappe",
+        "Yaourtière": "Joghurthersteller"
     },
-    "plugins\/gsh\/core\/class\/gsh_Rotation.class.php": {
-        "Rotation": "Drehung"
+    "plugins\/gsh\/core\/class\/gsh_ArmDisarm.class.php": {
+        "Etat": "Zustand",
+        "Off": "Aus",
+        "On": "Ein"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Brightness.class.php": {
+        "Etat Luminosité": "Helligkeitszustand",
+        "Luminosité": "Helligkeit"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Channel.class.php": {
+        "Chaine": "Kette",
+        "Etat chaine": "Kanalstatus"
+    },
+    "plugins\/gsh\/core\/class\/gsh_ColorSetting.class.php": {
+        "Couleur": "Farbe",
+        "Etat couleur": "Farbstatus"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Dock.class.php": {
+        "Retour sur sa base": "Zurück zur basis",
+        "Sur sa base": "Auf seiner Basis"
     },
     "plugins\/gsh\/core\/class\/gsh_FanSpeed.class.php": {
-        "Ventilateur": "Lüfter",
-        "Etat": "Zustand"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Reboot.class.php": {
-        "Redémarrage": "Wiederaufnahme"
-    },
-    "plugins\/gsh\/core\/class\/gsh_LockUnlock.class.php": {
-        "On": "Ein",
-        "Off": "Aus",
         "Etat": "Zustand",
-        "Inverser l\\'état": "Umgekehrter Zustand",
-        "Ne pas demander de code\/confirmation pour la fermeture": "Fragen Sie nicht nach einem Code \/ einer Bestätigung für die Schließung"
-    },
-    "plugins\/gsh\/core\/class\/gsh_SensorState.class.php": {
-        "Fumée": "Rauch",
-        "Fuite d\\'eau": "Wasserleck",
-        "Qualité d\\'air": "Luftqualität",
-        "Etat du filtre": "Filterstatus"
-    },
-    "plugins\/gsh\/core\/class\/gsh_MediaState.class.php": {
-        "Pause": "Pause",
-        "Reprendre": "Zusammenfassung",
-        "Stop": "STOP",
-        "Suivant": "Folgende",
-        "Précedent": "Früher"
-    },
-    "plugins\/gsh\/core\/class\/gsh_OnOff.class.php": {
-        "On": "Ein",
-        "Off": "Aus",
-        "Etat": "Zustand"
-    },
-    "plugins\/gsh\/core\/class\/gsh_OccupancySensing.class.php": {
-        "Présence": "Gegenwart"
+        "Ventilateur": "Lüfter"
     },
     "plugins\/gsh\/core\/class\/gsh_HumiditySetting.class.php": {
         "Contrôle humidité": "Feuchtigkeitskontrolle",
         "Etat contrôle humidité": "Feuchtigkeitskontrollstatus",
         "Humidité": "Luftfeuchtigkeit"
     },
+    "plugins\/gsh\/core\/class\/gsh_LockUnlock.class.php": {
+        "Etat": "Zustand",
+        "Inverser l\\'état": "Umgekehrter Zustand",
+        "Ne pas demander de code\/confirmation pour la fermeture": "Fragen Sie nicht nach einem Code \/ einer Bestätigung für die Schließung",
+        "Off": "Aus",
+        "On": "Ein"
+    },
+    "plugins\/gsh\/core\/class\/gsh_MediaState.class.php": {
+        "Pause": "Pause",
+        "Précedent": "Früher",
+        "Reprendre": "Zusammenfassung",
+        "Stop": "STOP",
+        "Suivant": "Folgende"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Modes.class.php": {
+        "Etat mode": "Modusstatus",
+        "Mode": "Modus",
+        "Nom du mode": "Modusname",
+        "Nom du mode pour la commande": "Modusname für den Befehl"
+    },
+    "plugins\/gsh\/core\/class\/gsh_OccupancySensing.class.php": {
+        "Présence": "Gegenwart"
+    },
+    "plugins\/gsh\/core\/class\/gsh_OnOff.class.php": {
+        "Etat": "Zustand",
+        "Off": "Aus",
+        "On": "Ein"
+    },
+    "plugins\/gsh\/core\/class\/gsh_OpenClose.class.php": {
+        "Afficher le bouton Arrêter": "Schaltfläche „Stopp“ anzeigen",
+        "Aucun": "Ohne",
+        "Autoriser ouverture partielle": "Teilöffnung zulassen",
+        "Commande partielle": "Teilbestellung",
+        "Etat": "Zustand",
+        "Inverser l\\'action": "Rückwärtsbewegung",
+        "Inverser l\\'état": "Umgekehrter Zustand",
+        "Off": "Aus",
+        "On": "Ein",
+        "Position": "Position"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Reboot.class.php": {
+        "Redémarrage": "Wiederaufnahme"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Rotation.class.php": {
+        "Rotation": "Drehung"
+    },
+    "plugins\/gsh\/core\/class\/gsh_SensorState.class.php": {
+        "Etat du filtre": "Filterstatus",
+        "Fuite d\\'eau": "Wasserleck",
+        "Fumée": "Rauch",
+        "Qualité d\\'air": "Luftqualität"
+    },
+    "plugins\/gsh\/core\/class\/gsh_StartStop.class.php": {
+        "Off": "Aus",
+        "On": "Ein"
+    },
+    "plugins\/gsh\/core\/class\/gsh_TemperatureControl.class.php": {
+        "Etat thermostat\/Température": "Thermostat \/ Temperaturstatus",
+        "Température": "Temperatur",
+        "Thermostat": "Thermostat"
+    },
+    "plugins\/gsh\/core\/class\/gsh_TemperatureSetting.class.php": {
+        "Action pour le mode Auto(chaud et froid)": "Aktion für den Auto-Modus (heiß und kalt)",
+        "Action pour le mode Eco": "Aktion für den Eco-Modus",
+        "Action pour le mode chaud": "Aktion für Heizmodus",
+        "Action pour le mode froid": "Aktion für den Kaltmodus",
+        "Action pour le mode off": "Aktion für Aus-Modus",
+        "Aucun": "Ohne",
+        "Chauffage": "Heizung",
+        "Climatisation": "Klimaanlage",
+        "Eco": "Umweltfreundlich",
+        "Etat": "Zustand",
+        "Etat themostat ": "Geben Sie den Status an",
+        "Humidité": "Luftfeuchtigkeit",
+        "Mode": "Modus",
+        "Off": "Aus",
+        "Thermostat": "Thermostat"
+    },
     "plugins\/gsh\/core\/class\/gsh_Timer.class.php": {
         "Etat Timer": "Timer-Status",
         "Timer": "Timer"
     },
-    "plugins\/gsh\/core\/class\/gsh_TemperatureSetting.class.php": {
-        "Thermostat": "Thermostat",
-        "Etat themostat ": "Geben Sie den Status an",
-        "Mode": "Modus",
-        "Etat": "Zustand",
-        "Humidité": "Luftfeuchtigkeit",
-        "Chauffage": "Heizung",
-        "Climatisation": "Klimaanlage",
-        "Eco": "Umweltfreundlich",
-        "Off": "Aus",
-        "Action pour le mode chaud": "Aktion für Heizmodus",
-        "Aucun": "Ohne",
-        "Action pour le mode froid": "Aktion für den Kaltmodus",
-        "Action pour le mode off": "Aktion für Aus-Modus",
-        "Action pour le mode Auto(chaud et froid)": "Aktion für den Auto-Modus (heiß und kalt)",
-        "Action pour le mode Eco": "Aktion für den Eco-Modus"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Dock.class.php": {
-        "Retour sur sa base": "Zurück zur basis",
-        "Sur sa base": "Auf seiner Basis"
+    "plugins\/gsh\/core\/class\/gsh_Toggle.class.php": {
+        "Nom du toggle": "Namen umschalten",
+        "Nom du toggle pour la commande": "Namen für Befehl umschalten",
+        "Toggle": "Umschalten"
     },
     "plugins\/gsh\/core\/class\/gsh_Volume.class.php": {
         "Etat volume": "Lautstärkestatus",
         "Volume": "Lautstärke"
     },
-    "plugins\/gsh\/core\/class\/gsh_TemperatureControl.class.php": {
-        "Thermostat": "Thermostat",
-        "Etat thermostat\/Température": "Thermostat \/ Temperaturstatus",
-        "Température": "Temperatur"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Channel.class.php": {
-        "Chaine": "Kette",
-        "Etat chaine": "Kanalstatus"
-    },
-    "plugins\/gsh\/core\/class\/gsh_StartStop.class.php": {
-        "On": "Ein",
-        "Off": "Aus"
-    },
     "plugins\/gsh\/core\/class\/gsh_scene.class.php": {
-        "Erreur lors de l\\'éxecution de ": "Fehler beim Ausführen",
-        ". Détails : ": "Details:"
+        ". Détails : ": "Details:",
+        "Erreur lors de l\\'éxecution de ": "Fehler beim Ausführen"
     },
-    "plugins\/gsh\/core\/class\/gsh_Toggle.class.php": {
-        "Toggle": "Umschalten",
-        "Nom du toggle": "Namen umschalten",
-        "Nom du toggle pour la commande": "Namen für Befehl umschalten"
+    "plugins\/gsh\/core\/php\/jeeGsh.php": {
+        "Configuration OK": "Konfiguration OK",
+        "Vous n\\'etes pas autorisé à effectuer cette action. Clef API invalide. Merci de corriger la clef API sur votre page profil du market et d\\'attendre 24h avant de réessayer.": "Sie sind nicht berechtigt, diese Aktion durchzuführen. Ungültiger API-Schlüssel. Bitte korrigieren Sie den API-Schlüssel auf Ihrer Marktprofilseite und warten Sie 24 Stunden, bevor Sie es erneut versuchen"
     },
-    "plugins\/gsh\/core\/class\/gsh_OpenClose.class.php": {
-        "Position": "Position",
-        "On": "Ein",
-        "Off": "Aus",
-        "Etat": "Zustand",
-        "Afficher le bouton Arrêter": "Schaltfläche „Stopp“ anzeigen",
-        "Inverser l\\'action": "Rückwärtsbewegung",
-        "Inverser l\\'état": "Umgekehrter Zustand",
-        "Autoriser ouverture partielle": "Teilöffnung zulassen",
-        "Commande partielle": "Teilbestellung",
-        "Aucun": "Ohne"
+    "plugins\/gsh\/core\/php\/jeeGshOauth.php": {
+        "Authentification à 2 facteurs": "2-Faktor-Authentifizierung",
+        "Merci de fournir un Token 2FA": "Bitte geben Sie einen 2FA-Token an",
+        "Merci de vous connecter avec un compte Admin": "Bitte melden Sie sich mit einem Admin-Konto an",
+        "Merci de vous connecter à votre Jeedom pour configurer la connexion avec Google": "Bitte verbinden Sie sich mit Ihrem Jeedom, um die Verbindung mit Google zu konfigurieren",
+        "Mot de passe": "Passwort",
+        "Mot de passe ou nom d'utilisateur incorrect": "Passwort oder ungültiger Benutzername",
+        "Nom d'utilisateur": "Nutzername",
+        "Valider": "Bestätigen"
     },
-    "plugins\/gsh\/core\/class\/gsh_ColorSetting.class.php": {
-        "Couleur": "Farbe",
-        "Etat couleur": "Farbstatus"
+    "plugins\/gsh\/desktop\/js\/gsh.js": {
+        "Action d\\'entrée": "Eingabeaktion",
+        "Action de sortie": "Aktion beenden",
+        "Cocher pour que la commande s\\'éxecute en parrallèle des autres actions": "Überprüfen Sie, ob der Befehl parallel zu den anderen Aktionen ausgeführt wird",
+        "Configuration avancée": "Erweiterte Konfiguration",
+        "Configuration de l'équipement": "Gerätekonfiguration",
+        "Configuration péripheriques": "Peripheriekonfiguration",
+        "Décocher pour désactiver l\\'action": "Auswählen, um die Aktion zu deaktivieren",
+        "Information type générique": "Allgemeine Typinformationen",
+        "Nom de la scène": "Name der Szene",
+        "Nom de la scène ?": "Name der Szene?",
+        "Nouveau nom ?": "Neuer Name",
+        "Pièce": "Zimmer",
+        "Pseudo": "Spitzname",
+        "Supprimer": "Löschen",
+        "Synchronisation réussie. Pour voir le status des équipements à jour, merci de rafraîchir la page (F5)": "Synchronisation erfolgreich. Aktualisieren Sie die Seite (F5), um den aktuellen Status des Geräts anzuzeigen",
+        "Sélectionner un mot-clé": "Schlüsselwort auswählen"
     },
-    "info.json": {
-        "Plugin pour piloter Jeedom avec un Google Home. Important : le plugin nécessite un abonnement aux services vocaux (3 mois offerts lors de l’achat du plugin) pour une configuration facile. Pour gérer cet abonnement : https:\/\/www.jeedom.com\/market\/index.php?v=d&p=profils#services Vous pouvez utiliser aussi le mode standalone mais sa configuration est plus complexe, nous vous conseillons vivement de lire la documentation avant tout achat si vous souhaitez utiliser ce mode.": "Plugin zur Steuerung von Jeedom mit einem Google Home. Wichtig: Für die einfache Konfiguration des Plugins ist ein Abonnement für Sprachdienste erforderlich (3 Monate kostenlos beim Kauf des Plugins). So verwalten Sie dieses Abonnement: https:\/\/www.jeedom.com\/market\/index.php?v=d&p=profils#services Sie können auch den Standalone-Modus verwenden, die Konfiguration ist jedoch komplexer. Wir empfehlen Ihnen dringend, die Dokumentation zu lesen vor jedem Kauf, wenn Sie diesen Modus verwenden möchten"
+    "plugins\/gsh\/desktop\/modal\/advanceConfig.php": {
+        "Action": "Aktion",
+        "Attention cela ne change absolument pas le fonctionnement du plugin": "Bitte beachten Sie, dass dies die Funktionsweise des Plugins nicht verändert",
+        "Aucun type configuré pour ce périphérique": "Kein Typ für dieses Gerät konfiguriert",
+        "Commandes": "Befehle",
+        "Configuration": "Konfiguration",
+        "Configuration de la commande": "Befehl Konfiguration",
+        "Device non trouvé": "Gerät nicht gefunden",
+        "Eqlogic ID non valide : ": "Ungültige Eqlogic ID:",
+        "Groupe objet (option nécéssitant un compte market spécifique)": "Objektgruppe (Option, die ein bestimmtes Marktkonto erfordert)",
+        "Général": "Allgemein",
+        "Nom": "Name",
+        "Pousser l'état": "Schieben Sie den Zustand",
+        "Sauvegarde réussi, pensez à relancer une synchronisation": "Sicherung erfolgreich, denken Sie daran, die Synchronisierung neu zu starten",
+        "Sauvegarder": "Speichern",
+        "Sous-type": "Untertyp",
+        "Type": "Typ",
+        "Type générique": "Typ Gattung",
+        "pousse l'information de l'état des modules au lieu d'attendre la demande de Google) par contre ca peut ralentir votre": "Pusht Modulstatusinformationen, anstatt auf die Anfrage von Google zu warten. Dies kann jedoch Ihre Daten verlangsamen"
+    },
+    "plugins\/gsh\/desktop\/modal\/showNeedGenericType.php": {
+        "Aucun type configuré pour ce périphérique": "Kein Typ für dieses Gerät konfiguriert",
+        "Device non trouvé": "Gerät nicht gefunden",
+        "Eqlogic ID non valide : ": "Ungültige Eqlogic ID:",
+        "Voici les types génériques utilisés pour le genre d\\'équipement choisi. Attention il ne faut pas forcément les avoir tous sur l\\'équipement (ou n’en avoir aucun)": "Hier sind die generischen Typen aufgeführt, die für den ausgewählten Gerätetyp verwendet werden. Bitte beachten Sie, dass Sie nicht unbedingt alle auf dem Gerät haben müssen (oder keine)"
+    },
+    "plugins\/gsh\/desktop\/php\/gsh.php": {
+        "' . $value['name'] . '": "' . $value['name'] . '",
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Action": "Aktion",
+        "Ajouter scène": "Szene hinzufügen",
+        "Aucun": "Ohne",
+        "Aucune": "Keine",
+        "Code": "Code",
+        "Code pin": "PIN-Code",
+        "Equipement": "Gerät",
+        "Options": "Optionen",
+        "Plugin": "Plugin",
+        "Pseudo": "Spitzname",
+        "Sauvegarder": "Speichern",
+        "Scénario": "Szenario",
+        "Status": "STATUS",
+        "Transmettre": "Senden",
+        "Type": "Typ",
+        "Validation": "Validierung",
+        "Voir la configuration": "Konfiguration anzeigen"
+    },
+    "plugins\/gsh\/plugin_info\/configuration.php": {
+        "Abonnement aux services assistants vocaux": "Abonnement für Sprachassistentendienste",
+        "Activer l'éxecution local": "Aktivieren Sie die lokale Ausführung",
+        "Activer la rotation de la clef api": "Aktivieren Sie die Drehung der API-Taste",
+        "Attention votre connexion externe ne semble pas etre en https, ce plugin nécessite ABSOLUMENT une connexion https. Si vous ne savez pas comment faire vous pouvez souscrire à un service pack power pour utiliser le service de DNS Jeedom": "Bitte beachten Sie, dass Ihre externe Verbindung nicht in https zu sein scheint. Dieses Plugin erfordert ABSOLUT eine https-Verbindung. Wenn Sie nicht wissen, wie, können Sie ein Netzteil abonnieren, um den Jeedom-DNS-Dienst zu nutzen",
+        "Authorization URL : ": "Autorisierungs-URL:",
+        "Cient ID": "Kundennummer",
+        "Cient Secret": "Cient Secret",
+        "Clef privé (JWT)": "Privater Schlüssel (JWT)",
+        "Cloud": "Wolke",
+        "Configuration envoyée avec succès": "Konfiguration erfolgreich gesendet",
+        "Envoyer": "Senden",
+        "Envoyer configuration au market": "Konfiguration an den Markt senden",
+        "Fulfillment URL : ": "Erfüllungs-URL:",
+        "Homegraph API Google": "Google API Homegraph",
+        "Homegraph User Agent": "Homegraph User Agent",
+        "ID du projet Smarthome": "Smarthome-Projekt-ID",
+        "Interdire toute requête si": "Verbieten Sie jede Anfrage, wenn",
+        "Mail client (JWT)": "Kundenpost (JWT)",
+        "Mode": "Modus",
+        "Oauth": "Oauth",
+        "Pour le prolonger, allez": "Um es zu erweitern, gehen Sie",
+        "Pour vous réabonner, allez": "Um sich erneut anzumelden, gehen Sie",
+        "Serveur Google smarthome": "Google Smarthome Server",
+        "Smarthome": "Intelligentes Zuhause",
+        "Standalone": "Standalone",
+        "Token URL : ": "Token-URL:",
+        "Votre abonnement aux services assistants vocaux est finit.": "Ihr Abonnement für Sprachassistentendienste ist beendet",
+        "Votre abonnement aux services assistants vocaux est illimité.": "Ihr Abonnement für Sprachassistentendienste ist unbegrenzt",
+        "Votre abonnement aux services assistants vocaux finit le ": "Ihr Abonnement für Sprachassistentendienste endet am",
+        "ici": "hier"
     }
 }
