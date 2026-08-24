@@ -1,322 +1,319 @@
 {
-    "plugins\/gsh\/plugin_info\/configuration.php": {
-        "Attention votre connexion externe ne semble pas etre en https, ce plugin nécessite ABSOLUMENT une connexion https. Si vous ne savez pas comment faire vous pouvez souscrire à un service pack power pour utiliser le service de DNS Jeedom": "Please note your external connection does not seem to be in https, this plugin ABSOLUTELY requires an https connection. If you don't know how, you can subscribe to a power pack to use the Jeedom DNS service",
-        "Serveur Google smarthome": "Google smarthome server",
-        "Mode": "Fashion",
-        "Cloud": "Cloud",
-        "Standalone": "Standalone",
-        "Abonnement aux services assistants vocaux": "Subscription to voice assistant services",
-        "Votre abonnement aux services assistants vocaux finit le ": "Your subscription to voice assistant services ends on",
-        "Pour le prolonger, allez": "To extend it, go",
-        "ici": "here",
-        "Votre abonnement aux services assistants vocaux est illimité.": "Your subscription to voice assistant services is unlimited",
-        "Votre abonnement aux services assistants vocaux est finit.": "Your subscription to voice assistant services has ended",
-        "Pour vous réabonner, allez": "To re-subscribe, go",
-        "Envoyer configuration au market": "Send configuration to market",
-        "Envoyer": "Send",
-        "Activer l'éxecution local": "Activate local execution",
-        "Activer la rotation de la clef api": "Activate the rotation of the api key",
-        "Interdire toute requête si": "Forbid any request if",
-        "Oauth": "Oauth",
-        "Cient ID": "Cient ID",
-        "Cient Secret": "Cient Secret",
-        "Smarthome": "Smarthome",
-        "Fulfillment URL : ": "Fulfillment URL:",
-        "Authorization URL : ": "Authorization URL:",
-        "Token URL : ": "Token URL:",
-        "ID du projet Smarthome": "Smarthome Project ID",
-        "Homegraph API Google": "Homegraph API Google",
-        "Homegraph User Agent": "Homegraph User Agent",
-        "Mail client (JWT)": "Customer Mail (JWT)",
-        "Clef privé (JWT)": "Private key (JWT)",
-        "Configuration envoyée avec succès": "Configuration successfully sent"
-    },
-    "plugins\/gsh\/desktop\/modal\/advanceConfig.php": {
-        "Eqlogic ID non valide : ": "Invalid Eqlogic ID:",
-        "Device non trouvé": "Device not found",
-        "Aucun type configuré pour ce périphérique": "No type configured for this device",
-        "Sauvegarder": "Save",
-        "Général": "Main",
-        "Groupe objet (option nécéssitant un compte market spécifique)": "Object group (option requiring a specific market account)",
-        "Pousser l'état": "Push the state",
-        "Attention cela ne change absolument pas le fonctionnement du plugin": "Please note that this does not change the way the plugin works",
-        "pousse l'information de l'état des modules au lieu d'attendre la demande de Google) par contre ca peut ralentir votre": "pushes module status information instead of waiting for Google's request) but it can slow your",
-        "Commandes": "Commands",
-        "Nom": "Name",
-        "Type": "Type",
-        "Sous-type": "Sub-type",
-        "Type générique": "Generic type",
-        "Action": "Action",
-        "Configuration": "Setup",
-        "Sauvegarde réussi, pensez à relancer une synchronisation": "Backup successful, remember to restart synchronization",
-        "Configuration de la commande": "Command setup"
-    },
-    "plugins\/gsh\/desktop\/modal\/showNeedGenericType.php": {
-        "Eqlogic ID non valide : ": "Invalid Eqlogic ID:",
-        "Device non trouvé": "Device not found",
-        "Aucun type configuré pour ce périphérique": "No type configured for this device",
-        "Voici les types génériques utilisés pour le genre d\\'équipement choisi. Attention il ne faut pas forcément les avoir tous sur l\\'équipement (ou n’en avoir aucun)": "Here are the generic types used for the type of equipment chosen. Please note that you do not necessarily have to have them all on the equipment (or have none)"
-    },
-    "plugins\/gsh\/desktop\/php\/gsh.php": {
-        "401 - Accès non autorisé": "401 - Unauthorized access",
-        "Voir la configuration": "View configuration",
-        "Sauvegarder": "Save",
-        "Equipement": "Device",
-        "Scénario": "Scenario",
-        "Plugin": "Plugin",
-        "Options": "Options",
-        "Status": "Status",
-        "Type": "Type",
-        "Pseudo": "Pseudo",
-        "Action": "Action",
-        "Transmettre": "Transmit",
-        "Aucune": "Any",
-        "Validation": "Validation",
-        "Code": "CODE",
-        "Code pin": "Pin code",
-        "Aucun": "None",
-        " . $value['name'] . ": "$ value ['name']",
-        "Ajouter scène": "Add scene"
-    },
-    "plugins\/gsh\/desktop\/js\/gsh.js": {
-        "Configuration de l'équipement": "Equipment configuration",
-        "Configuration avancée": "Advanced configuration",
-        "Information type générique": "Generic type information",
-        "Synchronisation réussie. Pour voir le status des équipements à jour, merci de rafraîchir la page (F5)": "Synchronization successful. To see the status of the equipment up to date, please refresh the page (F5)",
-        "Configuration péripheriques": "Peripheral configuration",
-        "Nom de la scène ?": "Name of the scene?",
-        "Nouveau nom ?": "New name?",
-        "Action d\\'entrée": "Input action",
-        "Action de sortie": "Exit action",
-        "Décocher pour désactiver l\\'action": "Uncheck to disable the action",
-        "Cocher pour que la commande s\\'éxecute en parrallèle des autres actions": "Check for the command to be executed in parallel with other actions",
-        "Sélectionner un mot-clé": "Select a keyword",
-        "Supprimer": "Delete",
-        "Nom de la scène": "Scene name",
-        "Pièce": "Room",
-        "Pseudo": "Pseudo"
-    },
-    "plugins\/gsh\/core\/php\/jeeGsh.php": {
-        "Vous n\\'etes pas autorisé à effectuer cette action. Clef API invalide. Merci de corriger la clef API sur votre page profil du market et d\\'attendre 24h avant de réessayer.": "You are not authorized to perform this action. Invalid API key. Please correct the API key on your market profile page and wait 24 hours before trying again",
-        "Configuration OK": "Configuration OK"
-    },
-    "plugins\/gsh\/core\/php\/jeeGshOauth.php": {
-        "Merci de fournir un Token 2FA": "Please provide a 2FA Token",
-        "Mot de passe ou nom d'utilisateur incorrect": "Password or invalid user name",
-        "Merci de vous connecter avec un compte Admin": "Please login with an Admin account",
-        "Merci de vous connecter à votre Jeedom pour configurer la connexion avec Google": "Please connect to your Jeedom to configure the connection with Google",
-        "Nom d'utilisateur": "Username",
-        "Mot de passe": "Password",
-        "Authentification à 2 facteurs": "2-factor authentication",
-        "Valider": "To validate"
-    },
     "plugins\/gsh\/core\/ajax\/gsh.ajax.php": {
         "401 - Accès non autorisé": "401 - Unauthorized access",
-        "Device non trouvé : ": "Device not found:",
-        "Aucune méthode correspondante à : ": "No method corresponding to:"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Modes.class.php": {
-        "Mode": "Fashion",
-        "Etat mode": "Mode state",
-        "Nom du mode": "Mode name",
-        "Nom du mode pour la commande": "Mode name for the command"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Brightness.class.php": {
-        "Luminosité": "Brightness",
-        "Etat Luminosité": "Brightness state"
-    },
-    "plugins\/gsh\/core\/class\/gsh_ArmDisarm.class.php": {
-        "On": "We",
-        "Off": "Off",
-        "Etat": "State"
+        "Aucune méthode correspondante à : ": "No method corresponding to:",
+        "Device non trouvé : ": "Device not found:"
     },
     "plugins\/gsh\/core\/class\/gsh.class.php": {
-        "Climatiseur": "Air conditioner",
-        "Refroidisseur d'air": "Air cooler",
-        "Désodorisant": "Deodorant",
-        "Purificateur d\\'air": "Air purifier",
+        "Adoucisseur d'eau": "Water softener",
+        "Alarme": "Alarm",
         "Ampli AV": "AV amplifier",
-        "Banne": "Awning",
+        "Arrosage": "Watering",
+        "Aspirateur": "Vacuum",
         "Baignoire": "Bathtub",
-        "Mixeur": "Blender",
-        "Store": "Store",
-        "Chaudière": "Boiler",
+        "Balai": "Broom",
+        "Banne": "Awning",
+        "Barre de son": "Soundbar",
+        "Bouilloire": "Kettle",
         "Caméra": "Camera",
-        "Detecteur de CO": "CO detector",
-        "Placard": "Cupboard",
-        "Machine à café": "Coffee machine",
+        "Capteur": "Sensor",
+        "Chaudière": "Boiler",
+        "Chauffe-eau": "Water heater",
+        "Cheminée": "Fireplace",
+        "Climatiseur": "Air conditioner",
+        "Congélateur": "Freezer",
+        "Cuiseur vapeur": "Steam cooker",
         "Cuisine": "Cooked",
-        "Rideaux": "Curtains",
+        "Detecteur de CO": "CO detector",
+        "Distributeur de nourriture pour animaux": "Pet food dispenser",
+        "Douche": "Shower",
+        "Décodeur": "Decoder",
         "Déshumidificateur": "Dehumidifier",
         "Déshydrateur": "Dehydrator",
-        "Lave-vaiselle": "Dishwasher",
-        "Porte": "Door",
-        "Tiroir": "Drawer",
-        "Séche linge": "Tumble dryer",
-        "Ventilateur": "Fan",
-        "Cheminée": "Fireplace",
-        "Congélateur": "Freezer",
+        "Désodorisant": "Deodorant",
+        "Détecteur de fumée": "Smoke detector",
+        "Erreur sur la demande de remonté d\\'état :": "Error on the status request:",
+        "Erreur sur la demande de synchronisation :": "Error on synchronization request:",
+        "Fenêtre": "Window",
+        "Frigo": "Fridge",
         "Friteuse": "Deep fryer",
-        "Porte Garage": "Garage door",
-        "Portail": "Portal",
+        "Google Smarthome": "Google Smart Home",
         "Grill": "Grill",
-        "Chauffe-eau": "Water heater",
         "Hotte": "Hood",
         "Humidificateur": "Humidifier",
-        "Bouilloire": "Kettle",
-        "Lumière": "Light",
-        "Verrou": "Lock",
-        "Micro-onde": "Microwave",
-        "Balai": "Broom",
-        "Tondeuse": "Mower",
-        "Multi-cuiseur": "Multi-cooker",
-        "Réseaux": "Networks",
-        "Prise": "Outlet",
-        "Pergola": "Pergola",
-        "Distributeur de nourriture pour animaux": "Pet food dispenser",
-        "Cuiseur vapeur": "Steam cooker",
-        "Radiateur": "Radiator",
-        "Frigo": "Fridge",
-        "Télécommande": "Remote control",
-        "Routeur": "Router",
-        "Scène": "Scene",
-        "Alarme": "Alarm",
-        "Capteur": "Sensor",
-        "Décodeur": "Decoder",
-        "Douche": "Shower",
-        "Volet": "Shutter",
-        "Détecteur de fumée": "Smoke detector",
-        "Barre de son": "Soundbar",
-        "Sous vide": "Under vacuum",
-        "Arrosage": "Watering",
-        "Mélangeur sur socle": "Stand mixer",
         "Interrupteur": "Light switch",
-        "Thermostat": "Thermostat",
-        "TV": "TV",
-        "Aspirateur": "Vacuum",
-        "Vanne": "Valve",
-        "Machine à laver": "Washing machine",
-        "Purificateur d'eau": "Water purifier",
-        "Adoucisseur d'eau": "Water softener",
-        "Fenêtre": "Window",
-        "Yaourtière": "Yogurt maker",
-        "Veuillez vérifier la configuration": "Please check the configuration",
-        "Erreur sur la demande de synchronisation :": "Error on synchronization request:",
-        "Erreur sur la demande de remonté d\\'état :": "Error on the status request:",
         "JWT aucun token : ": "JWT no token:",
-        "Google Smarthome": "Google Smart Home"
+        "Lave-vaiselle": "Dishwasher",
+        "Lumière": "Light",
+        "Machine à café": "Coffee machine",
+        "Machine à laver": "Washing machine",
+        "Micro-onde": "Microwave",
+        "Mixeur": "Blender",
+        "Multi-cuiseur": "Multi-cooker",
+        "Mélangeur sur socle": "Stand mixer",
+        "Pergola": "Pergola",
+        "Placard": "Cupboard",
+        "Portail": "Portal",
+        "Porte": "Door",
+        "Porte Garage": "Garage door",
+        "Prise": "Outlet",
+        "Purificateur d'eau": "Water purifier",
+        "Purificateur d\\'air": "Air purifier",
+        "Radiateur": "Radiator",
+        "Refroidisseur d'air": "Air cooler",
+        "Rideaux": "Curtains",
+        "Routeur": "Router",
+        "Réseaux": "Networks",
+        "Scène": "Scene",
+        "Sous vide": "Under vacuum",
+        "Store": "Store",
+        "Séche linge": "Tumble dryer",
+        "TV": "TV",
+        "Thermostat": "Thermostat",
+        "Tiroir": "Drawer",
+        "Tondeuse": "Mower",
+        "Télécommande": "Remote control",
+        "Vanne": "Valve",
+        "Ventilateur": "Fan",
+        "Verrou": "Lock",
+        "Veuillez vérifier la configuration": "Please check the configuration",
+        "Volet": "Shutter",
+        "Yaourtière": "Yogurt maker"
     },
-    "plugins\/gsh\/core\/class\/gsh_Rotation.class.php": {
-        "Rotation": "Rotation"
+    "plugins\/gsh\/core\/class\/gsh_ArmDisarm.class.php": {
+        "Etat": "State",
+        "Off": "Off",
+        "On": "We"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Brightness.class.php": {
+        "Etat Luminosité": "Brightness state",
+        "Luminosité": "Brightness"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Channel.class.php": {
+        "Chaine": "Chain",
+        "Etat chaine": "Channel status"
+    },
+    "plugins\/gsh\/core\/class\/gsh_ColorSetting.class.php": {
+        "Couleur": "Color",
+        "Etat couleur": "Color status"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Dock.class.php": {
+        "Retour sur sa base": "Back to base",
+        "Sur sa base": "On its basis"
     },
     "plugins\/gsh\/core\/class\/gsh_FanSpeed.class.php": {
-        "Ventilateur": "Fan",
-        "Etat": "State"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Reboot.class.php": {
-        "Redémarrage": "Restart"
-    },
-    "plugins\/gsh\/core\/class\/gsh_LockUnlock.class.php": {
-        "On": "We",
-        "Off": "Off",
         "Etat": "State",
-        "Inverser l\\'état": "Reverse state",
-        "Ne pas demander de code\/confirmation pour la fermeture": "Do not ask for a code \/ confirmation for the closing"
-    },
-    "plugins\/gsh\/core\/class\/gsh_SensorState.class.php": {
-        "Fumée": "Smoke",
-        "Fuite d\\'eau": "Water leak",
-        "Qualité d\\'air": "Air quality",
-        "Etat du filtre": "Filter status"
-    },
-    "plugins\/gsh\/core\/class\/gsh_MediaState.class.php": {
-        "Pause": "Pause",
-        "Reprendre": "Resume",
-        "Stop": "Stop",
-        "Suivant": "Next",
-        "Précedent": "Previous"
-    },
-    "plugins\/gsh\/core\/class\/gsh_OnOff.class.php": {
-        "On": "We",
-        "Off": "Off",
-        "Etat": "State"
-    },
-    "plugins\/gsh\/core\/class\/gsh_OccupancySensing.class.php": {
-        "Présence": "Presence"
+        "Ventilateur": "Fan"
     },
     "plugins\/gsh\/core\/class\/gsh_HumiditySetting.class.php": {
         "Contrôle humidité": "Humidity control",
         "Etat contrôle humidité": "Humidity control status",
         "Humidité": "Humidity"
     },
+    "plugins\/gsh\/core\/class\/gsh_LockUnlock.class.php": {
+        "Etat": "State",
+        "Inverser l\\'état": "Reverse state",
+        "Ne pas demander de code\/confirmation pour la fermeture": "Do not ask for a code \/ confirmation for the closing",
+        "Off": "Off",
+        "On": "We"
+    },
+    "plugins\/gsh\/core\/class\/gsh_MediaState.class.php": {
+        "Pause": "Pause",
+        "Précedent": "Previous",
+        "Reprendre": "Resume",
+        "Stop": "Stop",
+        "Suivant": "Next"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Modes.class.php": {
+        "Etat mode": "Mode state",
+        "Mode": "Fashion",
+        "Nom du mode": "Mode name",
+        "Nom du mode pour la commande": "Mode name for the command"
+    },
+    "plugins\/gsh\/core\/class\/gsh_OccupancySensing.class.php": {
+        "Présence": "Presence"
+    },
+    "plugins\/gsh\/core\/class\/gsh_OnOff.class.php": {
+        "Etat": "State",
+        "Off": "Off",
+        "On": "We"
+    },
+    "plugins\/gsh\/core\/class\/gsh_OpenClose.class.php": {
+        "Afficher le bouton Arrêter": "Show Stop button",
+        "Aucun": "None",
+        "Autoriser ouverture partielle": "Allow partial opening",
+        "Commande partielle": "Partial order",
+        "Etat": "State",
+        "Inverser l\\'action": "Reverse action",
+        "Inverser l\\'état": "Reverse state",
+        "Off": "Off",
+        "On": "We",
+        "Position": "Position"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Reboot.class.php": {
+        "Redémarrage": "Restart"
+    },
+    "plugins\/gsh\/core\/class\/gsh_Rotation.class.php": {
+        "Rotation": "Rotation"
+    },
+    "plugins\/gsh\/core\/class\/gsh_SensorState.class.php": {
+        "Etat du filtre": "Filter status",
+        "Fuite d\\'eau": "Water leak",
+        "Fumée": "Smoke",
+        "Qualité d\\'air": "Air quality"
+    },
+    "plugins\/gsh\/core\/class\/gsh_StartStop.class.php": {
+        "Off": "Off",
+        "On": "We"
+    },
+    "plugins\/gsh\/core\/class\/gsh_TemperatureControl.class.php": {
+        "Etat thermostat\/Température": "Thermostat \/ Temperature status",
+        "Température": "Temperature",
+        "Thermostat": "Thermostat"
+    },
+    "plugins\/gsh\/core\/class\/gsh_TemperatureSetting.class.php": {
+        "Action pour le mode Auto(chaud et froid)": "Action for Auto mode (hot and cold)",
+        "Action pour le mode Eco": "Action for Eco mode",
+        "Action pour le mode chaud": "Action for heating mode",
+        "Action pour le mode froid": "Action for cold mode",
+        "Action pour le mode off": "Action for off mode",
+        "Aucun": "None",
+        "Chauffage": "Heating",
+        "Climatisation": "Air conditioning",
+        "Eco": "Eco-friendly",
+        "Etat": "State",
+        "Etat themostat ": "State themostat",
+        "Humidité": "Humidity",
+        "Mode": "Fashion",
+        "Off": "Off",
+        "Thermostat": "Thermostat"
+    },
     "plugins\/gsh\/core\/class\/gsh_Timer.class.php": {
         "Etat Timer": "Timer state",
         "Timer": "Timer"
     },
-    "plugins\/gsh\/core\/class\/gsh_TemperatureSetting.class.php": {
-        "Thermostat": "Thermostat",
-        "Etat themostat ": "State themostat",
-        "Mode": "Fashion",
-        "Etat": "State",
-        "Humidité": "Humidity",
-        "Chauffage": "Heating",
-        "Climatisation": "Air conditioning",
-        "Eco": "Eco-friendly",
-        "Off": "Off",
-        "Action pour le mode chaud": "Action for heating mode",
-        "Aucun": "None",
-        "Action pour le mode froid": "Action for cold mode",
-        "Action pour le mode off": "Action for off mode",
-        "Action pour le mode Auto(chaud et froid)": "Action for Auto mode (hot and cold)",
-        "Action pour le mode Eco": "Action for Eco mode"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Dock.class.php": {
-        "Retour sur sa base": "Back to base",
-        "Sur sa base": "On its basis"
+    "plugins\/gsh\/core\/class\/gsh_Toggle.class.php": {
+        "Nom du toggle": "Toggle Name",
+        "Nom du toggle pour la commande": "Toggle name for command",
+        "Toggle": "Toggle"
     },
     "plugins\/gsh\/core\/class\/gsh_Volume.class.php": {
         "Etat volume": "Volume status",
         "Volume": "Volume"
     },
-    "plugins\/gsh\/core\/class\/gsh_TemperatureControl.class.php": {
-        "Thermostat": "Thermostat",
-        "Etat thermostat\/Température": "Thermostat \/ Temperature status",
-        "Température": "Temperature"
-    },
-    "plugins\/gsh\/core\/class\/gsh_Channel.class.php": {
-        "Chaine": "Chain",
-        "Etat chaine": "Channel status"
-    },
-    "plugins\/gsh\/core\/class\/gsh_StartStop.class.php": {
-        "On": "We",
-        "Off": "Off"
-    },
     "plugins\/gsh\/core\/class\/gsh_scene.class.php": {
-        "Erreur lors de l\\'éxecution de ": "Error while executing",
-        ". Détails : ": "Details:"
+        ". Détails : ": "Details:",
+        "Erreur lors de l\\'éxecution de ": "Error while executing"
     },
-    "plugins\/gsh\/core\/class\/gsh_Toggle.class.php": {
-        "Toggle": "Toggle",
-        "Nom du toggle": "Toggle Name",
-        "Nom du toggle pour la commande": "Toggle name for command"
+    "plugins\/gsh\/core\/php\/jeeGsh.php": {
+        "Configuration OK": "Configuration OK",
+        "Vous n\\'etes pas autorisé à effectuer cette action. Clef API invalide. Merci de corriger la clef API sur votre page profil du market et d\\'attendre 24h avant de réessayer.": "You are not authorized to perform this action. Invalid API key. Please correct the API key on your market profile page and wait 24 hours before trying again"
     },
-    "plugins\/gsh\/core\/class\/gsh_OpenClose.class.php": {
-        "Position": "Position",
-        "On": "We",
-        "Off": "Off",
-        "Etat": "State",
-        "Afficher le bouton Arrêter": "Show Stop button",
-        "Inverser l\\'action": "Reverse action",
-        "Inverser l\\'état": "Reverse state",
-        "Autoriser ouverture partielle": "Allow partial opening",
-        "Commande partielle": "Partial order",
-        "Aucun": "None"
+    "plugins\/gsh\/core\/php\/jeeGshOauth.php": {
+        "Authentification à 2 facteurs": "2-factor authentication",
+        "Merci de fournir un Token 2FA": "Please provide a 2FA Token",
+        "Merci de vous connecter avec un compte Admin": "Please login with an Admin account",
+        "Merci de vous connecter à votre Jeedom pour configurer la connexion avec Google": "Please connect to your Jeedom to configure the connection with Google",
+        "Mot de passe": "Password",
+        "Mot de passe ou nom d'utilisateur incorrect": "Password or invalid user name",
+        "Nom d'utilisateur": "Username",
+        "Valider": "To validate"
     },
-    "plugins\/gsh\/core\/class\/gsh_ColorSetting.class.php": {
-        "Couleur": "Color",
-        "Etat couleur": "Color status"
+    "plugins\/gsh\/desktop\/js\/gsh.js": {
+        "Action d\\'entrée": "Input action",
+        "Action de sortie": "Exit action",
+        "Cocher pour que la commande s\\'éxecute en parrallèle des autres actions": "Check for the command to be executed in parallel with other actions",
+        "Configuration avancée": "Advanced configuration",
+        "Configuration de l'équipement": "Equipment configuration",
+        "Configuration péripheriques": "Peripheral configuration",
+        "Décocher pour désactiver l\\'action": "Uncheck to disable the action",
+        "Information type générique": "Generic type information",
+        "Nom de la scène": "Scene name",
+        "Nom de la scène ?": "Name of the scene?",
+        "Nouveau nom ?": "New name?",
+        "Pièce": "Room",
+        "Pseudo": "Pseudo",
+        "Supprimer": "Delete",
+        "Synchronisation réussie. Pour voir le status des équipements à jour, merci de rafraîchir la page (F5)": "Synchronization successful. To see the status of the equipment up to date, please refresh the page (F5)",
+        "Sélectionner un mot-clé": "Select a keyword"
     },
-    "info.json": {
-        "Plugin pour piloter Jeedom avec un Google Home. Important : le plugin nécessite un abonnement aux services vocaux (3 mois offerts lors de l’achat du plugin) pour une configuration facile. Pour gérer cet abonnement : https:\/\/www.jeedom.com\/market\/index.php?v=d&p=profils#services Vous pouvez utiliser aussi le mode standalone mais sa configuration est plus complexe, nous vous conseillons vivement de lire la documentation avant tout achat si vous souhaitez utiliser ce mode.": "Plugin to control Jeedom with a Google Home. Important: the plugin requires a subscription to voice services (3 months free when purchasing the plugin) for easy configuration. To manage this subscription: https:\/\/www.jeedom.com\/market\/index.php?v=d&p=profils#services You can also use the standalone mode but its configuration is more complex, we strongly advise you to read the documentation before any purchase if you want to use this mode"
+    "plugins\/gsh\/desktop\/modal\/advanceConfig.php": {
+        "Action": "Action",
+        "Attention cela ne change absolument pas le fonctionnement du plugin": "Please note that this does not change the way the plugin works",
+        "Aucun type configuré pour ce périphérique": "No type configured for this device",
+        "Commandes": "Commands",
+        "Configuration": "Setup",
+        "Configuration de la commande": "Command setup",
+        "Device non trouvé": "Device not found",
+        "Eqlogic ID non valide : ": "Invalid Eqlogic ID:",
+        "Groupe objet (option nécéssitant un compte market spécifique)": "Object group (option requiring a specific market account)",
+        "Général": "Main",
+        "Nom": "Name",
+        "Pousser l'état": "Push the state",
+        "Sauvegarde réussi, pensez à relancer une synchronisation": "Backup successful, remember to restart synchronization",
+        "Sauvegarder": "Save",
+        "Sous-type": "Sub-type",
+        "Type": "Type",
+        "Type générique": "Generic type",
+        "pousse l'information de l'état des modules au lieu d'attendre la demande de Google) par contre ca peut ralentir votre": "pushes module status information instead of waiting for Google's request) but it can slow your"
+    },
+    "plugins\/gsh\/desktop\/modal\/showNeedGenericType.php": {
+        "Aucun type configuré pour ce périphérique": "No type configured for this device",
+        "Device non trouvé": "Device not found",
+        "Eqlogic ID non valide : ": "Invalid Eqlogic ID:",
+        "Voici les types génériques utilisés pour le genre d\\'équipement choisi. Attention il ne faut pas forcément les avoir tous sur l\\'équipement (ou n’en avoir aucun)": "Here are the generic types used for the type of equipment chosen. Please note that you do not necessarily have to have them all on the equipment (or have none)"
+    },
+    "plugins\/gsh\/desktop\/php\/gsh.php": {
+        "' . $value['name'] . '": "' . $value['name'] . '",
+        "401 - Accès non autorisé": "401 - Unauthorized access",
+        "Action": "Action",
+        "Ajouter scène": "Add scene",
+        "Aucun": "None",
+        "Aucune": "Any",
+        "Code": "CODE",
+        "Code pin": "Pin code",
+        "Equipement": "Device",
+        "Options": "Options",
+        "Plugin": "Plugin",
+        "Pseudo": "Pseudo",
+        "Sauvegarder": "Save",
+        "Scénario": "Scenario",
+        "Status": "Status",
+        "Transmettre": "Transmit",
+        "Type": "Type",
+        "Validation": "Validation",
+        "Voir la configuration": "View configuration"
+    },
+    "plugins\/gsh\/plugin_info\/configuration.php": {
+        "Abonnement aux services assistants vocaux": "Subscription to voice assistant services",
+        "Activer l'éxecution local": "Activate local execution",
+        "Activer la rotation de la clef api": "Activate the rotation of the api key",
+        "Attention votre connexion externe ne semble pas etre en https, ce plugin nécessite ABSOLUMENT une connexion https. Si vous ne savez pas comment faire vous pouvez souscrire à un service pack power pour utiliser le service de DNS Jeedom": "Please note your external connection does not seem to be in https, this plugin ABSOLUTELY requires an https connection. If you don't know how, you can subscribe to a power pack to use the Jeedom DNS service",
+        "Authorization URL : ": "Authorization URL:",
+        "Cient ID": "Cient ID",
+        "Cient Secret": "Cient Secret",
+        "Clef privé (JWT)": "Private key (JWT)",
+        "Cloud": "Cloud",
+        "Configuration envoyée avec succès": "Configuration successfully sent",
+        "Envoyer": "Send",
+        "Envoyer configuration au market": "Send configuration to market",
+        "Fulfillment URL : ": "Fulfillment URL:",
+        "Homegraph API Google": "Homegraph API Google",
+        "Homegraph User Agent": "Homegraph User Agent",
+        "ID du projet Smarthome": "Smarthome Project ID",
+        "Interdire toute requête si": "Forbid any request if",
+        "Mail client (JWT)": "Customer Mail (JWT)",
+        "Mode": "Fashion",
+        "Oauth": "Oauth",
+        "Pour le prolonger, allez": "To extend it, go",
+        "Pour vous réabonner, allez": "To re-subscribe, go",
+        "Serveur Google smarthome": "Google smarthome server",
+        "Smarthome": "Smarthome",
+        "Standalone": "Standalone",
+        "Token URL : ": "Token URL:",
+        "Votre abonnement aux services assistants vocaux est finit.": "Your subscription to voice assistant services has ended",
+        "Votre abonnement aux services assistants vocaux est illimité.": "Your subscription to voice assistant services is unlimited",
+        "Votre abonnement aux services assistants vocaux finit le ": "Your subscription to voice assistant services ends on",
+        "ici": "here"
     }
 }
