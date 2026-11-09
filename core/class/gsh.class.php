@@ -238,13 +238,22 @@ class gsh extends eqLogic {
 	}
 
 	public static function sendJeedomConfig() {
+		$apiKey = jeedom::getApiKey('gsh');
+		$url = network::getNetworkAccess('external');
+		if (class_exists('repo_market') && class_exists('marketClient', false)) {
+			marketClient::request('PUT', '/boxes/{boxId}/voice-assistant/google', array('apiKey' => $apiKey, 'url' => $url));
+			return;
+		}
 		$market = repo_market::getJsonRpc();
-		if (!$market->sendRequest('gsh::configGsh', array('gsh::apikey' => jeedom::getApiKey('gsh'), 'gsh::url' => network::getNetworkAccess('external')))) {
+		if (!$market->sendRequest('gsh::configGsh', array('gsh::apikey' => $apiKey, 'gsh::url' => $url))) {
 			throw new Exception($market->getError(), $market->getErrorCode());
 		}
 	}
 
 	public static function voiceAssistantInfo() {
+		if (class_exists('repo_market') && class_exists('marketClient', false)) {
+			return marketClient::request('GET', '/me/services/voice-assistant');
+		}
 		$market = repo_market::getJsonRpc();
 		if (!$market->sendRequest('voiceAssistant::info')) {
 			throw new Exception($market->getError(), $market->getErrorCode());
