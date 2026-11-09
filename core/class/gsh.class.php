@@ -261,13 +261,33 @@ class gsh extends eqLogic {
 		return $market->getResult();
 	}
 
+	private static function setCloudHeaders($request_http) {
+		$cloudToken = null;
+		if (is_callable(array('repo_market', 'getCloudToken'))) {
+			try {
+				$cloudToken = repo_market::getCloudToken();
+			} catch (Exception $e) {
+				if ($e->getCode() !== 401) {
+					throw $e;
+				}
+			}
+		}
+		if ($cloudToken) {
+			if (strtolower((string) parse_url($request_http->getUrl(), PHP_URL_SCHEME)) !== 'https') {
+				throw new Exception(__('Le service Cloud doit utiliser HTTPS.', __FILE__));
+			}
+			$request_http->setNoSslCheck(false);
+		}
+		$request_http->setHeader(array(
+			'Content-Type: application/json',
+			$cloudToken ? 'Authorization: Bearer ' . $cloudToken : 'Autorization: ' . sha512(strtolower(config::byKey('market::username')) . ':' . config::byKey('market::password'))
+		));
+	}
+
 	public static function sendDevices() {
 		if (config::byKey('mode', 'gsh') == 'jeedom') {
 			$request_http = new com_http(config::byKey('service::cloud::url') . '/service/googlehome');
-			$request_http->setHeader(array(
-				'Content-Type: application/json',
-				'Autorization: ' . sha512(strtolower(config::byKey('market::username')) . ':' . config::byKey('market::password'))
-			));
+			self::setCloudHeaders($request_http);
 			$request_http->setPost(json_encode(array('action' => 'sync')));
 			$result = json_decode($request_http->exec(30), true);
 			if (!isset($result['state']) || $result['state'] != 'ok') {
@@ -440,10 +460,7 @@ class gsh extends eqLogic {
 		log::add('gsh', 'debug', 'Report state : ' . json_encode($return));
 		if (config::byKey('mode', 'gsh') == 'jeedom') {
 			$request_http = new com_http(config::byKey('service::cloud::url') . '/service/googlehome');
-			$request_http->setHeader(array(
-				'Content-Type: application/json',
-				'Autorization: ' . sha512(strtolower(config::byKey('market::username')) . ':' . config::byKey('market::password'))
-			));
+			self::setCloudHeaders($request_http);
 			$request_http->setPost(json_encode(array('action' => 'reportState', 'data' => json_encode($return))));
 			$result = json_decode($request_http->exec(30), true);
 			if (!isset($result['state']) || $result['state'] != 'ok') {
